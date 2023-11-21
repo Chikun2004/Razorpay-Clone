@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RazorPay - Best Payment Solution</title>
+
+    <!-- Custom Stylesheet  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind by cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstap Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg py-3"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container">
+        <div id="logo">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="Razorpay"
+              class="image-fluid"
+              style="width: 87%"
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="fa fa-bars" style="color: white; font-size: 24px"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-light"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banking</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Line Of Credit</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payroll</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <img
+                  src="images/flag.svg"
+                  alt=""
+                  class="ms-3"
+                  style="margin-top: 15px"
+                />
+              </li>
+            </ul>
+            <a
+              href="#0"
+              class="btn btn-outline-light px-4"
+              id="login1"
+              style="font-weight: 550"
+              >Log In</a
+            >
+            <a
+              href="#0"
+              class="btn btn-info px-4"
+              id="login2"
+              style="font-weight: 550"
+              >Log In</a
+            >
+            <a
+              href="#0"
+              class="btn btn-light mx-4 px-3"
+              id="signin"
+              style="color: rgb(0, 183, 255); font-weight: 550"
+              >Sign Up <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section  -->
+
+    <div class="container-fluid" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 text-start home-item1">
+            <h1 class="big-heading">Power your finance, grow your business</h1>
+
+            <div class="line"></div>
+
+            <p class="text-secondary">
+              Accept payments from customers. Automate payouts to vendors &
+              employees. Never run out of working capital.
+            </p>
+            <button class="btn btn-lg btn-primary">
+              Sign Up Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="col-lg-7">
+            <img
+              alt="Online Payments, RazorpayX with Current Accounts, Bank Transfer, and more"
+              src="https://razorpay.com/build/browser/static/illustration-desktop.4a9233fc.jpg"
+              loading="eager"
+              class="bannerImg css-1w45fpy"
+              srcset="
+                https://razorpay.com/build/browser/static/illustration-mobile.f8ed734a.jpg  1023w,
+                https://razorpay.com/build/browser/static/illustration-desktop.4a9233fc.jpg 3000w
+              "
+              style="object-fit: contain; width: 96%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape">
+      <img src="./images/hero-shape.svg" alt="" />
+    </div>
+
+    <!-- Pricing Section  -->
+
+    <div class="container-fluid" id="payments">
+      <div class="container">
+        <div class="payments-head my-5 py-5">
+          <h3 class="text-center" style="font-weight: 650; font-size: 2.3rem">
+            Accept Payments with Razorpay Payment Suite
+          </h3>
+        </div>
+
+        <div class="payments-item1 row py-3 rounded">
+          <div class="col-md-6 ps-5">
+            <h3 class="py-3" style="font-size: 1.8rem">
+              Supercharge your business with the all‑powerful
+              <span style="color: rgb(43, 133, 235); font-size: 2.1rem">
+                Payment Gateway</span
+              >
+            </h3>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                100+ Payment Methods
+              </li>
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                Industry Leading Success Rate
+              </li>
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                Superior Checkout Experience
+              </li>
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                Easy to Integrate
+              </li>
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                Instant Settlements from day 1
+              </li>
+              <li class="list-group-item">
+                <i
+                  class="fa fa-check"
+                  style="font-size: 20px; color: lightgreen"
+                ></i>
+                In-depth Reporting and Insights
+              </li>
+            </ul>
+
+            <a href="#0" class="btn btn-lg btn-primary my-4 mx-2"
+              >Sign Up Now <span><i class="fa fa-arrow-right"></i></span>
+            </a>
+
+            <a href="#0" class="btn btn-lg btn-outline-primary my-4 mx-2"
+              >Know More <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="col-md-6 py-5 payments-image">
+            <img
+              alt=""
+              src="https://razorpay.com/build/browser/static/payment-suite.c8ef898b.png"
+              loading="lazy"
+              class="image-fluid"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payments Features  -->
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-4 col-md-6" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Payment Links</h5>
+              <p class="text-secondary">
+                Share payment link via an email, SMS, messenger, chatbot etc.
+                and get paid immediately.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Payment Pages</h5>
+              <p class="text-secondary">
+                Accept international and domestic payments with automated
+                payment receipts.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Payment Buttons</h5>
+              <p class="text-secondary">
+                Create, Copy & Collect With Payment Button. Collect one time or
+                subscription payments & more.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Subscriptions</h5>
+              <p class="text-secondary">
+                Subscription plans with automated recurring transactions on
+                various payment modes.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Route</h5>
+              <p class="text-secondary">
+                Split incoming payments auto- matically to vendor’s accounts,
+                manage marketplace money flow.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Smart Collect</h5>
+              <p class="text-secondary">
+                Automatically reconcile incoming NEFT, IMPS, UPI payments using
+                Customer Identifiers & UPI-IDs
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUSINESS BANKING SECTION  -->
+
+    <div class="container-fluid" id="business-section">
+      <div class="container">
+        <div class="payments-head my-5 py-5">
+          <h2 class="text-center text-white">
+            Explore RazorpayX powered Business Banking
+          </h2>
+        </div>
+
+        <div class="payments-item1 row py-3 rounded">
+          <div class="col-md-6 ps-5">
+            <h3 class="py-3 text-white" style="font-size: 1.8rem">
+              Manage your company’s finances and supercharge your business
+              banking with
+              <img
+                src="https://razorpay.com/build/browser/static/razorpay-x-logo.5cf8015e.svg"
+                alt=""
+              />
+            </h3>
+
+            <ul class="text-white">
+              <li>
+                <i class="fa-solid fa-check" style="color: lightgreen"></i>
+                Open a fully digital current account
+              </li>
+              <li class="">
+                <i class="fa-solid fa-check" style="color: lightgreen"></i>
+                Automate payables & compliment payments
+              </li>
+              <li class="">
+                <i class="fa-solid fa-check" style="color: lightgreen"></i>
+                Simplify and track spends with Corporate cards
+              </li>
+              <li class="">
+                <i class="fa-solid fa-check" style="color: lightgreen"></i>
+                View financial insights at a glance
+              </li>
+            </ul>
+
+            <a href="#0" class="btn btn-lg btn-primary my-4 mx-2"
+              >Sign Up Now <i class="fa fa-arrow-right"></i
+            ></a>
+
+            <a href="#0" class="btn btn-lg btn-outline-primary my-4 mx-2"
+              >Know More <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="col-md-6 py-5 payments-image">
+            <img
+              alt=""
+              src="https://razorpay.com/build/browser/static/x-graphic.b40f463e.png"
+              loading="lazy"
+              class="image-fluid"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-lg-4 col-md-6" id="payments-features">
+              <div class="card bg-transparent" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Current Account</h5>
+                  <p class="text-secondary">
+                    Current accounts for fast-growing businesses, supported by
+                    the best-in-class technology.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Know More <i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 payments-features"
+              id="payments-features"
+            >
+              <div class="card bg-transparent" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Payouts</h5>
+                  <p class="text-secondary">
+                    Make simple, reliable & secure payouts to bank accounts, UPI
+                    IDs or wallets.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Know More <i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 payments-features"
+              id="payments-features"
+            >
+              <div class="card bg-transparent" style="width: 18rem">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Payroll</h5>
+                  <p class="text-secondary">
+                    Set your payroll and compliances like TDS, ESIC, PT, & PF on
+                    autopilot.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Know More <i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid payments-image">
+          <div
+            class="container border rounded d-flex align-items-center justify-content-center text-center py-4 mx-auto"
+          >
+            <h5 class="text-white pe-5">
+              Check out the live demo to learn how RazorpayX works. No sign-up
+              required!
+            </h5>
+
+            <a href="#0" class="btn btn-primary ps-3 btn-lg"
+              >Check out the demo <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Design -->
+
+    <div class="container" id="product">
+      <div class="row my-5">
+        <div class="col-lg-4 col-md-6" id="payments-features">
+          <h2 class="ps-4" style="padding-top: 70px">
+            New in the
+            <span style="font-size: 3rem; color: rgb(0, 183, 255)"
+              >Razorpay</span
+            >
+            Product Suite
+          </h2>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                src="https://razorpay.com/build/browser/static/instant-settlements.b6b6e467.svg"
+                class="bg-primary rounded-5 mb-2"
+                style="width: 15%"
+                alt=""
+              />
+              <h5 class="card-title">Instant Settlements</h5>
+              <p class="text-secondary">
+                Settle your customer payments within 10 seconds as your account
+                is activated, even during holidays.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                src="https://razorpay.com/build/browser/static/upi-autopay.df1cd0fd.svg"
+                class="bg-primary rounded-5 mb-2"
+                style="width: 15%"
+                alt=""
+              />
+              <h5 class="card-title">UPI Autopay</h5>
+              <p class="text-secondary">
+                Allow customers to set up recurring payments using UPI Apps.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                src="https://razorpay.com/build/browser/static/payment-buttons.74fc1e0f.svg"
+                class="bg-primary rounded-5 mb-2"
+                alt=""
+              />
+
+              <h5 class="card-title">Payment Button</h5>
+              <p class="text-secondary">
+                Accept payments on your website, in less than 5 minutes. No
+                developer needed.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                src="https://razorpay.com/build/browser/static/qr-mc-code.aec73db1.svg"
+                class="mb-2"
+                alt=""
+              />
+              <h5 class="card-title">QR Code</h5>
+              <p class="text-secondary">
+                Create unlimited QR codes with business branding and start
+                accepting payments for free*.
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 payments-features" id="payments-features">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <img
+                src="https://razorpay.com/build/browser/static/supercheckout-comp.49cd2f79.svg"
+                class="rounded-5 mb-2"
+                alt=""
+                style="width: 15%"
+              />
+              <h5 class="card-title">Magic Checkout</h5>
+              <p class="text-secondary">
+                Improve your order conversion rates & reduce return-to-origins.
+                Boost your business by 20%!
+              </p>
+              <a href="#" class="btn btn-primary"
+                >Know More <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+
+    <div class="container-fluid" id="features">
+      <div class="container text-white">
+        <h3 class="text-center text-white">Features</h3>
+        <p class="text-center py-3">
+          Empower your business with all the right tools to accept <br />
+          online payments and provide the best customer experience
+        </p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/instant-activation.6f975aa6.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Instant Activation</h5>
+            <p class="text-white-50">
+              Get activated and transact within 2 minutes. Completely online
+              onboarding with minimum documentation.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="    https://razorpay.com/build/browser/static/easy-integration.18651e2f.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Easy Integration</h5>
+            <p class="text-white-50">
+              With plugins for all major platforms and languages, integrate and
+              go live with Razorpay in less than an hour.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/api-driven.207572da.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">API Driven</h5>
+            <p class="text-white-50">
+              Build your business for scale with our complete API-driven
+              automation that requires zero manual intervention.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/payment-modes.da25e039.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">100+ payment modes</h5>
+            <p class="text-white-50">
+              Offer your customers the luxury of all payment modes including
+              Credit/Debit cards, Netbanking, UPI, Wallets etc.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/simple-pricing.dc58cdbb.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Simple Pricing</h5>
+            <p class="text-white-50">
+              Our innovative payment solutions with competitive pricing make
+              payments simpler.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/support.714ccbce.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Best in Industry Support</h5>
+            <p class="text-white-50">
+              Always available email, phone and chat based support to help you
+              in your every step.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/dashboard-reporting.15590378.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Dashboard Reporting</h5>
+            <p class="text-white-50">
+              Real-time data and insights on your Razorpay Dashboard to make
+              informed business decisions.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pt-3">
+            <img
+              src="https://razorpay.com/build/browser/static/secure.742a33ac.svg"
+              alt=""
+            />
+            <h5 class="fw-semibold mb-0 py-2">Secure</h5>
+            <p class="text-white-50">
+              PCI DSS Level 1 compliant solution which removes your burden of
+              regulatory compliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARTNERS SECTION  -->
+
+    <div class="container-fluid mt-5" style="background-color: #f5f8fd">
+      <div class="container">
+        <div class="row" style="display: flex; align-items: center">
+          <div class="col-lg-5">
+            <h4 class="pb-3">Join the 50,00,000 businesses using Razorpay</h4>
+            <p>
+              We make it easier for you to focus on building great products
+              while we work on simplifying your payments. Become one of us by
+              joining thousands of our happy users and simplify the online
+              payment experience for your customers.
+              <br /><br />
+              Focus on your business while we handle the complexities of
+              payments for you.
+            </p>
+            <a href="#0" class="mt-2 btn-lg btn btn-primary"
+              >Get Started <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- hehe -->
+          <div class="col-lg-4 payments-image" style="margin-left: 13%">
+            <div
+              style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+              class="absolute w-full h-[150px] top-0 z-50"
+            ></div>
+
+            <img
+              src="./images/comanies.png"
+              alt="Our Partners"
+              class="companiesList"
+            />
+
+            <div
+              style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+              class="absolute w-full h-[150px] bottom-0 z-50"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Community Carousel Section  -->
+
+    <div class="container px-5" id="community">
+      <h4 class="text-center pb-5 mb-5">
+        An Experience <br />
+        People Love to Talk About
+      </h4>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators slider-buttons">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s1.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Acquire Customers From New Customer Segments
+                </p>
+                <h4>Subham Kumar</h4>
+                <p>Product Manager</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/unacademy.1c618f03.svg"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s2.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Improved The Bottom Line With Cash-Like Collection
+                </p>
+                <h4>Saurav Goyal</h4>
+                <p>Chief Finance Officer</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/moneyview.cc7bb2cc.png"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s3.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Readymade Closed Wallet Solution For Quick Refunds
+                </p>
+                <h4>Ashish Somani</h4>
+                <p>GM, Strategy and Planning</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/medlife.b4057da3.png"
+                  alt=""
+                  class="w-25"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s4.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Single Flow To Collect And Disburse Payments
+                </p>
+                <h4>Pranay Bhardwaj</h4>
+                <p>Product Manager</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/slice.3cf8125b.png"
+                  alt=""
+                  class="w-25"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s5.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Simplified Reconciliation Process For FinOps Teams
+                </p>
+                <h4>Shailesh Gupta</h4>
+                <p>Founder</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/innov8.66ced7e1.svg"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s6.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Finance Your Working Capital To Continue Growing
+                </p>
+                <h4>Girish Khemnani</h4>
+                <p>Owner</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/marketing.b788f40a.png"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row community-item">
+              <div class="col-lg-5 community-item1 pe-3">
+                <img src="images/s7.png" class="d-block w-100" alt="" />
+              </div>
+
+              <div
+                class="col-lg-7 ps-5 d-flex flex-column justify-content-center"
+              >
+                <img
+                  src="https://razorpay.com/build/browser/static/quotes-icon.40f48901.svg"
+                  style="width: 45px"
+                  alt=""
+                />
+                <p class="fs-3 fw-lighter">
+                  Helped Us Reduce Outstandings By 18%
+                </p>
+                <h4>Aravind Radhakrishnan</h4>
+                <p>Product Director</p>
+                <img
+                  src="https://razorpay.com/build/browser/static/zoomcar.57998cda.svg"
+                  alt=""
+                  class="w-50"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Final Sign Up -->
+
+    <div class="container-fluid mt-5" id="summary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-5 text-white">
+            <h4 class="text-white">Supercharge your business with Razorpay</h4>
+            <p>
+              Sign up now to experience the future of payments and offer your
+              customers the best checkout experience.
+            </p>
+            <ul class="list-group list-group-flush text-white">
+              <li class="list-group-item text-white bg-transparent">
+                <i class="fa fa-check" style="font-size: 20px; color: aqua"></i>
+                Quick Onboarding
+              </li>
+              <li class="list-group-item text-white bg-transparent">
+                <i class="fa fa-check" style="font-size: 20px; color: aqua"></i>
+                Access to entire product suite
+              </li>
+              <li class="list-group-item text-white bg-transparent">
+                <i class="fa fa-check" style="font-size: 20px; color: aqua"></i>
+                API access
+              </li>
+              <li class="list-group-item text-white bg-transparent">
+                <i class="fa fa-check" style="font-size: 20px; color: aqua"></i>
+                24x7 support
+              </li>
+            </ul>
+            <a href="#0" class="btn btn-lg btn-light my-3 text-info-emphasis"
+              >Sign Up <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="col-lg-4">
+            <img
+              src="https://razorpay.com/build/browser/static/footer-signup.6bf7413f.svg"
+              alt=""
+              class="features-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section  -->
+
+    <div class="container-fluid py-5" id="footer" style="margin-top: 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-9">
+            <div id="logo">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="https://razorpay.com/build/browser/static/razorpay-logo.5cdb58df.svg"
+                  alt="Razorpay"
+                  class="image-fluid"
+                  style="width: 87%"
+              /></a>
+            </div>
+            <br />
+            <p class="text-secondary-emphasis fs-6 pe-4">
+              Razorpay is the only payments solution in India that allows
+              businesses to accept, process and disburse payments with its
+              product suite. It gives you access to all payment modes including
+              credit card, debit card, netbanking, UPI and popular wallets
+              including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money
+              and PayZapp. <br />
+              <br />
+
+              RazorpayX supercharges your business banking experience, bringing
+              effectiveness, efficiency, and excellence to all financial
+              processes. With RazorpayX, businesses can get access to
+              fully-functional current accounts, supercharge their payouts and
+              automate payroll compliance.
+              <br />
+              <br />
+              Manage your marketplace, automate bank transfers, collect
+              recurring payments, share invoices with customers and avail
+              working capital loans - all from a single platform. Fast forward
+              your business with Razorpay.
+              <br />
+              <br />
+              <small>
+                Disclaimer: The RazorpayX powered Current Account and VISA
+                corporate credit card are provided by RBI licensed banks. Your
+                RazorpayX powered account is provided by our partner bank, in
+                accordance with RBI regulations. RazorpayX itself is not a bank
+                and doesn't hold or claim to hold a banking license.</small
+              >
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">BANKING PLUS</h6>
+                  <a href="#0">RazorpayX</a>
+                  <a href="#0">Current Accounts</a>
+                  <a href="#0">Payouts</a>
+                  <a href="#0">Payout Links</a>
+                  <a href="#0">Corporate Credit Card</a>
+                  <a href="#0">View Live Demo</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">LENDING</h6>
+                  <a href="#0">Razorpay Capital</a>
+                  <a href="#0">Instant Settlements</a>
+                  <a href="#0">Line of Credit</a>
+                  <a href="#0">Payout Links</a>
+                  <a href="#0">Working Capital Loans</a>
+                  <a href="#0">Marketplace Instant Settlement</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">BECOME A PARTNER</h6>
+                  <a href="#0">Refer and Earn</a>
+                  <a href="#0">Onboarding APIs</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">MORE</h6>
+                  <a href="#0">Route</a>
+                  <a href="#0">Invoices</a>
+                  <a href="#0">Freelancer Payments</a>
+                  <a href="#0">International</a>
+                  <a href="#0"> Flash Checkout</a>
+                  <a href="#0"> UPI</a>
+                  <a href="#0">ePOS</a>
+                  <a href="#0">Checkout Demo</a>
+                  <a href="#0">RazorpayX Payroll</a>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">ACCEPT PAYMENTS</h6>
+                  <a href="#0"> Payment Gateway</a>
+                  <a href="#0"> Payment Pages</a>
+                  <a href="#0">Payment Links</a>
+                  <a href="#0"> QR Codes</a>
+                  <a href="#0">Subscriptions</a>
+                  <a href="#0"> Smart Collect</a>
+                  <a href="#0">Optimizer</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">DEVELOPERS</h6>
+                  <a href="#0">Docs</a>
+                  <a href="#0">Integrations</a>
+                  <a href="#0">API Reference</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">RESOURCES</h6>
+                  <a href="#0">Blog</a>
+                  <a href="#0">Customer Stories</a>
+                  <a href="#0">Events</a>
+                  <a href="#0">Chargeback Guide</a>
+                  <a href="#0">Settlement Guide</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">SOLUTIONS</h6>
+                  <a href="#0">Education</a>
+                  <a href="#0">E-commerce</a>
+                  <a href="#0">SaaS</a>
+                  <a href="#0">BFSI</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">FREE TOOLS</h6>
+                  <a href="#0"> GST Calculator</a>
+                  <a href="#0">Online TDS Payment</a>
+                  <a href="#0">GST Number Search</a>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">COMPANY</h6>
+                  <a href="#0"> About Us</a>
+                  <a href="#0"> Careers</a>
+                  <a href="#0"> Terms of Use</a>
+                  <a href="#0"> Privacy Policy</a>
+                  <a href="#0"> Grievance Redressal</a>
+                  <a href="#0">Responsible Disclosure</a>
+                  <a href="#0"> Partners</a>
+                  <a href="#0">White papers</a>
+                  <a href="#0">Corporate Information</a>
+                </div>
+
+                <div class="footer-item d-flex flex-column">
+                  <h6 class="item-head">HELP & SUPPORT</h6>
+                  <a href="#0">Support</a>
+                  <a href="#0">Knowledge base</a>
+                </div>
+
+                <div class="footer-item">
+                  <h6 class="item-head">FIND US ONLINE</h6>
+                  <a href="#0" class="social">
+                    <img
+                      src="https://razorpay.com/build/browser/static/facebook.c8412162.svg"
+                      alt=""
+                      class="pe-2"
+                    />
+                    <img
+                      src="https://razorpay.com/build/browser/static/twitter.1da3bf4c.svg"
+                      alt=""
+                      class="pe-2"
+                    />
+                    <img
+                      src="https://razorpay.com/build/browser/static/instagram.136e6800.svg"
+                      alt=""
+                      class="pe-2"
+                    />
+                    <img
+                      src="https://razorpay.com/build/browser/static/github.cede60eb.svg"
+                      alt=""
+                      class="pe-2"
+                    />
+
+                    <img
+                      src="https://razorpay.com/build/browser/static/linkedin.f28970d6.svg"
+                      alt=""
+                      class="pe-2"
+                      style="width: 15%"
+                    />
+                  </a>
+
+                  <h6 class="pt-4">REGD. OFFICE ADDRESS</h6>
+                  <p class="text-dark-emphasis fs-6">
+                    Razorpay Software Private Limited, 1st Floor, SJR Cyber, 22
+                    Laskar Hosur Road, Adugodi, Bengaluru, 560030, Karnataka,
+                    India CIN: U72200KA2013PTC097389 <br />
+                    <br />
+                    © Razorpay 2023
+                    <br />
+                    All Rights Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
